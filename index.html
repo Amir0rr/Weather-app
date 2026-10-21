@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather app</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="weather-app">
+        <h1>Weather App</h1>
         <div class="search-box">
-            <form>
-                <label for="name">City name:</label>
-                <input type="text">
+            <form id="form">
+                <label for="city-name">City name:</label>
+                <input type="text" id="city-name" class="city-name-input" placeholder="Enter a city" autocomplete="off"
+                    required>
                 <button type="submit">Search</button>
             </form>
         </div>
-        <div class="result">
-
+        <div class="result hidden">
+            <h2 class="city-name"></h2>
+            <p class="temp">Temperature: <span class="temp-number"></span> °C</p>
+            <p class="weather-conditions"></p>
+            <p class="wind-speed">Wind speed: <span class="wind-speed-number"></span> km/h</p>
+        </div>
+        <div class="messages">
+            <p class="message" aria-live="polite"></p>
         </div>
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
