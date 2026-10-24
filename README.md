@@ -23,7 +23,9 @@ A responsive weather app built with HTML, CSS and JavaScript. Search for any cit
 
 ## Data Source
 
-Weather data is provided by [Open-Meteo](https://open-meteo.com/) (free API, CC BY 4.0 licence). This project was built for learning purposes and non-commercial use only.
+Weather data by [Open-Meteo.com](https://open-meteo.com/), licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). City lookup uses the Open-Meteo Geocoding API, which is based on [GeoNames](https://www.geonames.org/) data. Weather codes are converted to text by this project.
+
+This project was built for learning purposes and non-commercial use only. It is not affiliated with or endorsed by Open-Meteo.
 
 ## What I Learned
 
