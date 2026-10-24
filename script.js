@@ -31,9 +31,9 @@ const getConditionText = (code) => {
 };
 
 const getWeather = async (city) => {
-  messageEL.classList.add("message-error")
-  messageEL.textContent = "Please enter a city name";
   if (city === "") {
+    messageEL.classList.add("message-error");
+    messageEL.textContent = "Please enter a city name!";
     resultBox.classList.add("hidden");
     return;
   }
@@ -55,7 +55,7 @@ const getWeather = async (city) => {
 
     if (geoData.results === undefined) {
       resultBox.classList.add("hidden");
-      messageEL.textContent = "City not found";
+      messageEL.textContent = "City not found.";
       messageEL.classList.add("message-error");
       return;
     }
@@ -85,7 +85,7 @@ const getWeather = async (city) => {
     messageEL.textContent = "";
   } catch (error) {
     messageEL.classList.add("message-error");
-    messageEL.textContent = "Something went wrong, please try again";
+    messageEL.textContent = "Something went wrong, please try again.";
     console.error(error);
   } finally {
     submitBtn.disabled = false;

@@ -17,6 +17,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   margin: 0;
   box-sizing: border-box;
   min-height: 100vh;
@@ -28,17 +29,22 @@ body {
   );
   font-family: Inter, sans-serif;
   padding: 10px;
+  gap: 15px;
 }
 
 h1 {
   color: #f1f1f9;
-  font-size: 35px;
+  font-size: 40px;
   font-weight: 800;
 }
 label {
   color: #f1f1f9;
   font-size: 16px;
-  flex-basis: 100%
+  flex-basis: 100%;
+}
+
+a {
+  color: #94a3b8;
 }
 
 .weather-app {
@@ -54,10 +60,10 @@ label {
   padding: 20px 50px 60px 50px;
 }
 
-.form{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
 .city-name-input {
@@ -72,11 +78,11 @@ label {
   font-family: Inter, sans-serif;
   font-size: 14px;
   flex: 1;
-    min-width: 0;
+  min-width: 0;
 }
 
 .city-name-input:hover {
-  border:2px solid #0ea5e9;
+  border: 2px solid #0ea5e9;
 }
 
 .city-name-input::placeholder {
@@ -107,7 +113,7 @@ label {
 .submit-btn:disabled {
   background-color: #475569;
   color: #94a3b8;
-  cursor: not-allowed
+  cursor: not-allowed;
 }
 
 .result {
@@ -125,6 +131,8 @@ label {
   color: #f1f5f9;
   font-size: 25px;
   font-weight: 900;
+  text-align: center;
+  overflow-wrap: anywhere;
 }
 
 .temp {
@@ -147,7 +155,7 @@ label {
 
 .wind-speed {
   color: #94a3b8;
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -155,10 +163,36 @@ label {
   color: #94a3b8;
   font-size: 20px;
   font-weight: 800;
+  text-align: center;
 }
 
 .message-error {
   color: #f87171;
   font-size: 20px;
   font-weight: 800;
+  text-align: center;
+}
+
+.open-meteo {
+  color: #94a3b8;
+}
+
+/* Responsive */
+
+@media (max-width: 460px) {
+  .weather-app {
+    padding: 20px 20px 60px 20px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .form {
+    width: 100%;
+  }
+  .city-name-input {
+    width: 100%;
+  }
 }
