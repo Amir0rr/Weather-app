@@ -4,7 +4,7 @@ A responsive weather app built with HTML, CSS and JavaScript. Search for any cit
 
 🔗 **Live Demo:** https://amir0rr.github.io/Weather-app/
 
-![Desktop preview](images/screenshots/desktop.png)
+![Desktop preview](images/screenshots/desktop.PNG)
 
 ## Features
 
