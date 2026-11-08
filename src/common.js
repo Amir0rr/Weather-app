@@ -1,0 +1,9 @@
+export const formEL = document.querySelector("#form");
+export const cityInput = document.querySelector(".city-name-input");
+export const messageEL = document.querySelector(".message");
+export const resultBox = document.querySelector(".result");
+export const submitBtn = document.querySelector(".submit-btn");
+export const tempNumber = document.querySelector(".temp-number");
+export const windSpeed = document.querySelector(".wind-speed-number");
+export const cityName = document.querySelector(".city-name");
+export const weatherCondition = document.querySelector(".weather-conditions");
